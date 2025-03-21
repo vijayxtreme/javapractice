@@ -4,4 +4,7 @@ public class Helper {
             System.out.print(i + " ");
         }
     }
+    public static void print(String message){
+        System.out.println(message);
+    }
 }
