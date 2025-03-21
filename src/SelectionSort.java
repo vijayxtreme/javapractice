@@ -1,10 +1,8 @@
-public class Sorting {
-    // Use this class to do the IK work - Selection Sort, etc
-    public static void print(int i){
-        System.out.println(i);
-    }
-
-    public static void selectionSort(int arr[]) {
+public class SelectionSort {
+    //find the minimum element each iteration, swap it with the current minimum
+    //in-place algorithm (constant space O(1)), runs O(N^2) time complexity
+    //is unstable as a sort
+    public static void selectionSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i<n - 1; i++){ // n - 1 ensures no extra iteration
             int min = i; //assume the first index is the minimum
