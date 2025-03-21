@@ -1,7 +1,16 @@
 public class InsertionSort {
     public static void sort(int[] arr) {
         // insertion sort - it's like getting dealt a card each time and comparing with what you got before
-
+        for (int i=0; i<arr.length; i++){
+            //get card
+            int temp = arr[i];
+            int leftIndex = i-1;
+            while (leftIndex >= 0 && arr[leftIndex] > temp ){
+                arr[leftIndex+1] = arr[leftIndex];
+                leftIndex--;
+            }
+            arr[leftIndex + 1] = temp;
+        }
     }
     public static void main (String[] args) {
         System.out.println("Before sort");
